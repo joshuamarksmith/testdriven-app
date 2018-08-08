@@ -2,8 +2,13 @@
 
 from flask import Flask, jsonify
 
-# instantiate the app
+
+# Instantiate the app
 app = Flask(__name__)
+
+# Set the configuration
+app.config.from_object('project.config.DevelopmentConfig')
+
 
 @app.route('/users/ping', methods=['GET'])
 def ping_pong():
