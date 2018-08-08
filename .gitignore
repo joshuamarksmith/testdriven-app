@@ -1,2 +1,3 @@
 .vscode
-services/users/env
+env/
+*.pyc
