@@ -1,0 +1,18 @@
+version: '3.6'
+
+services:
+
+  # Build the user service
+  users:
+    build:
+      context: ./services/users
+      dockerfile: Dockerfile-dev
+    # Mount code to docker container
+    volumes:
+      - './services/users:/usr/src/app'
+    ports:
+      - 5001:5000
+    environment:
+      - FLASK_APP=project/__init__.py
+      - FLASK_ENV=development
+      - APP_SETTINGS=project.config.DevelopmentConfig
