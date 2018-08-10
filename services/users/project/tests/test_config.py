@@ -1,5 +1,4 @@
 # services/users/project/tests/test_config.py
-# Tests the configuration status
 
 
 import os
