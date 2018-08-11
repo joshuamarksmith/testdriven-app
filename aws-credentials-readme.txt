@@ -1,0 +1,1 @@
+~/.aws/credentials located at C:\users\joshu\.aws\credentials
